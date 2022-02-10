@@ -1,6 +1,6 @@
 {
-  "name": "sanjeev-kr/magento2-newsletter",
-  "description": "Magento 2 module to save first name and last name for newsletter subscriber",
+  "name": "sanjeev-kr/newsletter",
+  "description": "Magento 2 module to save first name and last name for newsletter subscribers",
   "version": "1.0.0",
   "license": "MIT",
   "require": {
