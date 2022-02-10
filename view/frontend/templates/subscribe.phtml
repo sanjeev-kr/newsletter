@@ -1,0 +1,65 @@
+<?php
+/**
+ * Sanjeev_Newsletter extension
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category  Sanjeev
+ * @package   Sanjeev_Newsletter
+ * @copyright Copyright (c) 2022
+ * @license   http://opensource.org/licenses/mit-license.php MIT License
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var \Magento\Newsletter\Block\Subscribe $block */
+
+?>
+<div class="block newsletter">
+    <div class="title"><strong><?= $block->escapeHtml(__('Newsletter')) ?></strong></div>
+    <div class="content">
+        <form class="form-with-names subscribe"
+            novalidate
+            action="<?= $block->escapeUrl($block->getFormActionUrl()) ?>"
+            method="post"
+            data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+            id="newsletter-validate-detail">
+            <div class="field">
+                <label class="label" for="firstname"><span><?= $block->escapeHtml(__('First name:')) ?></span></label>
+                <div class="name">
+                    <input name="firstname" type="text" id="firstname"
+                           placeholder="<?= $block->escapeHtml(__('Enter your first name')) ?>"
+                           data-mage-init='{"mage/trim-input":{}}'
+                           data-validate="{required:true}"/>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="lastname"><span><?= $block->escapeHtml(__('Last name:')) ?></span></label>
+                <div class="name">
+                    <input name="lastname" type="text" id="lastname"
+                           placeholder="<?= $block->escapeHtml(__('Enter your last name')) ?>"
+                           data-mage-init='{"mage/trim-input":{}}'
+                    />
+                </div>
+            </div>
+            <div class="field newsletter">
+                <label class="label" for="newsletter"><span><?= $block->escapeHtml(__('Sign Up for Our Newsletter:')) ?></span></label>
+                <div class="control">
+                    <input name="email" type="email" id="newsletter"
+                           placeholder="<?= $block->escapeHtml(__('Enter your email address')) ?>"
+                           data-mage-init='{"mage/trim-input":{}}'
+                           data-validate="{required:true, 'validate-email':true}"/>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="action subscribe primary" title="<?= $block->escapeHtmlAttr(__('Subscribe')) ?>" type="submit">
+                    <span><?= $block->escapeHtml(__('Subscribe')) ?></span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Sanjeev_Newsletter extension
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category  Sanjeev
+ * @package   Sanjeev_Newsletter
+ * @copyright Copyright (c) 2022
+ * @license   http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Newsletter\Model\Subscriber" type="Sanjeev\Newsletter\Model\Subscriber" />
+</config>

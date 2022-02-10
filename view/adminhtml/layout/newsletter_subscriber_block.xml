@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Sanjeev_Newsletter extension
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category  Sanjeev
+ * @package   Sanjeev_Newsletter
+ * @copyright Copyright (c) 2022
+ * @license   http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="adminhtml.newslettrer.subscriber.grid.columnSet.firstname">
+            <arguments>
+                <argument name="index" xsi:type="string">subscriber_firstname</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="adminhtml.newslettrer.subscriber.grid.columnSet.lastname">
+            <arguments>
+                <argument name="index" xsi:type="string">subscriber_lastname</argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>
